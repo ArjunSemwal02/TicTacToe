@@ -3,6 +3,7 @@
 body{
     margin: 0;
     font-family: 'poppins', sans-serif;
+    background-color: rgb(240, 236, 181);
 }
 
 .title{
@@ -28,6 +29,7 @@ body{
 
 .box{
     border: 2px solid white;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
     font-size: 5vw;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -37,15 +39,21 @@ body{
 }
 
 .box:hover{
-    background-color: rgb(230, 179, 146);
+    background-color: rgb(231, 115, 115);
 }
 
 .state{
     padding: 40px;
 }
 
+.state div{
+    display: flex;
+    justify-content: space-between;
+}
+
 #reset{
     padding: .5rem 2rem;
+    margin: 0 .5rem;
     background-color: darkred;
     color: white;
     border-radius: 5px;
