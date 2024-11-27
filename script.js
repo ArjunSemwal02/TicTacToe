@@ -43,4 +43,5 @@ Array.from(boxes).forEach( box => {
 resetElement.addEventListener('click', () => {
     Array.from(boxes).forEach(box => box.innerText = '');
     statusElement.textContent = 'Play';
+    changeTurn();
 })
