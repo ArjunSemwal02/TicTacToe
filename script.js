@@ -38,9 +38,7 @@ Array.from(boxes).forEach( element => {
 
 
 //Reseting Game
-// const resetGame = () => {
-    resetElement.addEventListener('click', () => {
-        Array.from(boxes).forEach(box => box.innerText = '');
-        statusElement.textContent = 'Play';
-    })
-// }
+resetElement.addEventListener('click', () => {
+    Array.from(boxes).forEach(box => box.innerText = '');
+    statusElement.textContent = 'Play';
+})
