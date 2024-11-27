@@ -1,7 +1,8 @@
-//Play ZeroKatta
 const resetElement = document.getElementById('reset');
-let boxes = document.getElementsByClassName("box");
-let statusElement = document.querySelector('.status');
+const boxes = document.getElementsByClassName("box");
+const statusElement = document.querySelector('.status');
+
+
 let turn = "X"
 let gameover = false;
 
@@ -11,7 +12,7 @@ const changeTurn = () => {
 }
 
 //Function to check for a win
-function checkwin() {
+function checkWin() {
     let text = document.getElementsByClassName('boxText');
     let wins = [ [0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6] ];
 
@@ -24,13 +25,14 @@ function checkwin() {
 }
 
 //Game Logic
-Array.from(boxes).forEach( element => {
-    let text = element.querySelector('.boxText');
-    element.addEventListener( 'click', () => {
+Array.from(boxes).forEach( box => {
+    let text = box.querySelector('.boxText');
+    box.addEventListener( 'click', () => {
         if( text.innerText === '' ) {
             text.innerText = turn;
             turn = changeTurn();
-            checkwin();
+            checkWin();
+
             if(!gameover)     document.getElementsByClassName("status")[0].innerText = "Turn for " + turn;
         }
     })

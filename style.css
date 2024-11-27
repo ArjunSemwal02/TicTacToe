@@ -4,9 +4,11 @@ body{
     margin: 0;
     font-family: 'poppins', sans-serif;
     background-color: rgb(240, 236, 181);
+    box-sizing: border-box;
 }
 
-.title{
+#title{
+    margin: 0;
     font-size: 5rem;
     color: darkred;
     background-color: rgb(240, 183, 183);
