@@ -1,2 +1,2 @@
 # TicTacToe
-A app written in html, css and Javascript
+A app written in Javascript.
